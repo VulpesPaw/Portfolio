@@ -16,6 +16,7 @@ h1 {
 
 #links{
   margin: auto;
+  padding: 1em;
 
 }
 .r_container {
@@ -50,6 +51,7 @@ a:hover {
 .r_type{
   margin: 0.25em;
   font-size: 8pt;
+  text-align: left;
 }
 .r_preview{
   max-width: 100%;

@@ -21,21 +21,12 @@
        * Make pretty (prettier)
        * Get hold of old projects
        * Start linking
-       *
+       * Put all of JS inside an anonym function
        */
 
-      function loadJSON(callback) {
-        var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-        xobj.open("GET", "paths.json", true); // Replace 'my_data' with the path to your file
-        xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xobj.responseText);
-          }
-        };
-        xobj.send(null);
-      }
+      //
+
+      //
 
       loadJSON((data) => {
         var data = JSON.parse(data);
@@ -46,12 +37,12 @@
             (obj) =>
               `<div id="${obj._id}" class="r_container">
                 <a href="${obj.url}">
-                  <h3>${obj.title}</h3>
+                  <h3 class="r_title">${obj.title}</h3>
                   <h6 style="text-align: right">${obj.age}</h6>
                   <br />
                   <p><b>${obj.course}</b></p>
-                  <p class="r_tag">tags: ${obj.tag}</p>
-                  <p class="r_type"><i>${obj.type}</i></p>
+                  <p class="r_type">Stack type:<i>${obj.type}</i></p>
+                  <p class="r_tag">Tags: <i>${obj.tag}</i></p>
                   <img class="r_preview" src="${obj.img}" alt="Preview of _id:${
                 obj.id
               }"></a>
@@ -63,19 +54,22 @@
         `
           )
           .join("");
-        console.log(render);
-        console.log(render[0]);
-        console.log(render[0]._id);
 
         document.querySelector("#links").innerHTML = render;
       });
-      //       const json =
-      //   '{"user1":"John","user2":"Kate","user3":"Peter"}';
 
-      // const map = new Map(Object.entries(JSON.parse(json)));
-
-      // Map(3) { 'user1' => 'John', 'user2' => 'Kate', 'user3' => 'Peter' }
-      // console.log(map);
+      //  Retrieves JSON data file
+      function loadJSON(callback) {
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open("GET", "paths.json", true);
+        xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            callback(xobj.responseText);
+          }
+        };
+        xobj.send(null);
+      }
     </script>
   </body>
 </html>
