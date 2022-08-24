@@ -1,0 +1,27 @@
+{
+  "path":[
+     {
+      "_id":"url1",
+      "title": "Creatorise Front End",
+      "age": "two years ago",
+      "url": "/creatorise",
+      "course": "Web development 1",
+      "tag":"Node.JS, React ",
+      "type":"frontend",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum officiis et vero perspiciatis obcaecati rem optio libero? Expedita, quis obcaecati quod ducimus quasi animi! Voluptates id ullam hic asperiores, fugit voluptatibus cumque voluptatum pariatur dicta voluptas cupiditate magni dignissimos corporis eos nisi consequatur. Sapiente culpa iure delectus repudiandae consectetur nostrum illo quo aspernatur voluptate corporis natus, similique unde, et libero sit animi ea facilis eos? Rem pariatur eveniet iusto quod aperiam earum atque aut voluptatum! Rerum distinctio, minus recusandae corrupti molestias quam velit eos quidem nesciunt, laboriosam obcaecati. Ad veniam quas, possimus voluptatum provident eveniet libero laboriosam placeat esse?",
+      "img":"./0.jpg"
+    },
+     {
+      "_id":"url2",
+      "title": "Creatorise Back end",
+      "age": "two years ago",
+      "url": "/#",
+      "course": "Web development 1",
+      "tag":"Google Firebase, FireStore ",
+      "type":"backend",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum officiis et vero perspiciatis obcaecati rem optio libero? Expedita, quis obcaecati quod ducimus quasi animi! Voluptates id ullam hic asperiores, fugit voluptatibus cumque voluptatum pariatur dicta voluptas cupiditate magni dignissimos corporis eos nisi consequatur. Sapiente culpa iure delectus repudiandae consectetur nostrum illo quo aspernatur voluptate corporis natus, similique unde, et libero sit animi ea facilis eos? Rem pariatur eveniet iusto quod aperiam earum atque aut voluptatum! Rerum distinctio, minus recusandae corrupti molestias quam velit eos quidem nesciunt, laboriosam obcaecati. Ad veniam quas, possimus voluptatum provident eveniet libero laboriosam placeat esse?",
+      "img":"./1.jpg"
+    
+    }
+  ]
+}

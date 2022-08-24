@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio - Richard Johansson</title>
+  </head>
+  <body>
+    <h1>Portfolio</h1>
+
+    <div id="links"></div>
+    <script>
+      /**
+       * Todo: =====
+       * // Read paths from json file bc technicalities
+       * // Include age, course, type of projects (eg. front/back-end), info etc.
+       * // after json reader, use map functions to print to page
+       * // Include images
+       * Make pretty (prettier)
+       * Get hold of old projects
+       * Start linking
+       *
+       */
+
+      function loadJSON(callback) {
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open("GET", "paths.json", true); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+          }
+        };
+        xobj.send(null);
+      }
+
+      loadJSON((data) => {
+        var data = JSON.parse(data);
+        // console.log(data.path);
+
+        let render = data.path
+          .map(
+            (obj) =>
+              `<div id="${obj._id}" class="r_container">
+                <a href="${obj.url}">
+                  <h3>${obj.title}</h3>
+                  <h6 style="text-align: right">${obj.age}</h6>
+                  <br />
+                  <p><b>${obj.course}</b></p>
+                  <p class="r_tag">tags: ${obj.tag}</p>
+                  <p class="r_type"><i>${obj.type}</i></p>
+                  <img class="r_preview" src="${obj.img}" alt="Preview of _id:${
+                obj.id
+              }"></a>
+                  <details>
+                    <summary>${obj.info.slice(0, 25)}...</summary>
+                    <div class="content">${obj.info}</div>
+                  </details>
+              </div>
+        `
+          )
+          .join("");
+        console.log(render);
+        console.log(render[0]);
+        console.log(render[0]._id);
+
+        document.querySelector("#links").innerHTML = render;
+      });
+      //       const json =
+      //   '{"user1":"John","user2":"Kate","user3":"Peter"}';
+
+      // const map = new Map(Object.entries(JSON.parse(json)));
+
+      // Map(3) { 'user1' => 'John', 'user2' => 'Kate', 'user3' => 'Peter' }
+      // console.log(map);
+    </script>
+  </body>
+</html>
