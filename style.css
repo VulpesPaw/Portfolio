@@ -11,55 +11,51 @@ body {
 h1 {
   text-align: center;
   margin: 1em;
-
 }
 
-#links{
+#links {
   margin: auto;
   padding: 1em;
-
 }
 .r_container {
   margin: 5em auto;
   text-align: center;
   min-height: 25em;
-  max-width: 25rem; 
-   border: 1px solid #222;
+  max-width: 25rem;
+  border: 1px solid #bbb;
   /* border: 1px solid #aaa; */
   border-radius: 1em;
   padding: 1em 2em 2em 2em;
+  background-color: #3a3a3a;
 }
-.r_container *{
+.r_container * {
   margin: 0.25em;
-
 }
 a:link {
   color: #ddd;
   text-decoration: none;
 }
-a:visited{
+a:visited {
   color: #ddd;
 }
 a:hover {
   text-decoration: underline;
 }
-.r_tag{
+.r_tag {
   font-size: 8pt;
   text-align: left;
-
 }
-.r_type{
+.r_type {
   margin: 0.25em;
   font-size: 8pt;
   text-align: left;
 }
-.r_preview{
+.r_preview {
   max-width: 100%;
   height: auto;
   margin: 0;
 }
-.r_title{
+.r_title {
   color: pink;
   margin: 0.25em;
-
 }

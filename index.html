@@ -5,71 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
     <title>Portfolio - Richard Johansson</title>
   </head>
   <body>
     <h1>Portfolio</h1>
 
     <div id="links"></div>
-    <script>
-      /**
-       * Todo: =====
-       * // Read paths from json file bc technicalities
-       * // Include age, course, type of projects (eg. front/back-end), info etc.
-       * // after json reader, use map functions to print to page
-       * // Include images
-       * Make pretty (prettier)
-       * Get hold of old projects
-       * Start linking
-       * Put all of JS inside an anonym function
-       */
-
-      //
-
-      //
-
-      loadJSON((data) => {
-        var data = JSON.parse(data);
-        // console.log(data.path);
-
-        let render = data.path
-          .map(
-            (obj) =>
-              `<div id="${obj._id}" class="r_container">
-                <a href="${obj.url}">
-                  <h3 class="r_title">${obj.title}</h3>
-                  <h6 style="text-align: right">${obj.age}</h6>
-                  <br />
-                  <p><b>${obj.course}</b></p>
-                  <p class="r_type">Stack type:<i>${obj.type}</i></p>
-                  <p class="r_tag">Tags: <i>${obj.tag}</i></p>
-                  <img class="r_preview" src="${obj.img}" alt="Preview of _id:${
-                obj.id
-              }"></a>
-                  <details>
-                    <summary>${obj.info.slice(0, 25)}...</summary>
-                    <div class="content">${obj.info}</div>
-                  </details>
-              </div>
-        `
-          )
-          .join("");
-
-        document.querySelector("#links").innerHTML = render;
-      });
-
-      //  Retrieves JSON data file
-      function loadJSON(callback) {
-        var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-        xobj.open("GET", "paths.json", true);
-        xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            callback(xobj.responseText);
-          }
-        };
-        xobj.send(null);
-      }
-    </script>
+    
   </body>
 </html>
