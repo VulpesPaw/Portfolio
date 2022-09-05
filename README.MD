@@ -1,7 +1,13 @@
 # Portfolio
 
-### What it'll do
+### 
 
-This is the head directory for my portfolio.
+This portfolio will be a centralized main point containing of links to futher sources.
 
-This will not include portfolio pieces, this will just link to them from a main website.
+This repo will not include catalouges for portfolio pieces, just links to them based on hosting server.
+
+Some of the projects are avalible in repos on github, those may be linked within the prortfolio.
+
+
+
+Website: [Portfolio - Ricahrd Johansson](https://www.portfolio.torparlyckan.se)

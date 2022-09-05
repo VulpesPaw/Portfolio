@@ -1,27 +1,113 @@
 {
-  "path":[
-     {
-      "_id":"url1",
-      "title": "Creatorise Front End",
-      "age": "two years ago",
+  "path": [
+    {
+      "_id": "000",
+      "title": "Creatorise",
+      "age": "2020",
       "url": "/creatorise",
       "course": "Web development 1",
-      "tag":"Node.JS, React ",
-      "type":"frontend",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum officiis et vero perspiciatis obcaecati rem optio libero? Expedita, quis obcaecati quod ducimus quasi animi! Voluptates id ullam hic asperiores, fugit voluptatibus cumque voluptatum pariatur dicta voluptas cupiditate magni dignissimos corporis eos nisi consequatur. Sapiente culpa iure delectus repudiandae consectetur nostrum illo quo aspernatur voluptate corporis natus, similique unde, et libero sit animi ea facilis eos? Rem pariatur eveniet iusto quod aperiam earum atque aut voluptatum! Rerum distinctio, minus recusandae corrupti molestias quam velit eos quidem nesciunt, laboriosam obcaecati. Ad veniam quas, possimus voluptatum provident eveniet libero laboriosam placeat esse?",
-      "img":"./0.jpg"
+      "tags": ["html", "js", "css", "static, front-end"],
+      "type": "Front-End, Static",
+      "sub_text": "Static Creatorise Mock Page",
+      "info": "Creatorise is a static mock website for my company Creatorise.<br> This project were used as my final exam in the course <i>Web Development One</i>; this course regards Front-End development, taken at Kattegattgymnasiet, Halmstad.<br> It is static webpages where information cannot be updated by any user. ",
+      "img": "./images/creatorise_preview.jpg"
     },
-     {
-      "_id":"url2",
-      "title": "Creatorise Back end",
-      "age": "two years ago",
+    {
+      "_id": "001",
+      "title": "Firebook",
+      "age": "2021",
       "url": "/#",
-      "course": "Web development 1",
-      "tag":"Google Firebase, FireStore ",
-      "type":"backend",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum officiis et vero perspiciatis obcaecati rem optio libero? Expedita, quis obcaecati quod ducimus quasi animi! Voluptates id ullam hic asperiores, fugit voluptatibus cumque voluptatum pariatur dicta voluptas cupiditate magni dignissimos corporis eos nisi consequatur. Sapiente culpa iure delectus repudiandae consectetur nostrum illo quo aspernatur voluptate corporis natus, similique unde, et libero sit animi ea facilis eos? Rem pariatur eveniet iusto quod aperiam earum atque aut voluptatum! Rerum distinctio, minus recusandae corrupti molestias quam velit eos quidem nesciunt, laboriosam obcaecati. Ad veniam quas, possimus voluptatum provident eveniet libero laboriosam placeat esse?",
-      "img":"./1.jpg"
-    
+      "course": "Gymnasium Thesis",
+      "tags": ["Google Firebase", "BaaS", "FireStore", "CRUD", "Authentication" ],
+      "type": "Back-End",
+      "sub_text": "Static  Creatorise",
+      "info": "Firebook, is a full CRUD webapplication with authentication and authoritisation utalizing Google's BaaS<i>(Backend-as-a-Service)</i>; Firebase ",
+      "img": "./images/firebooks_preview.jpg"
+    },
+    {
+      "_id": "",
+      "title": "PHP",
+      "age": "",
+      "url": "",
+      "course": "",
+      "tags": ["" ],
+      "type": "",
+      "sub_text": "",
+      "info": "",
+      "img": "./images/"
+    },
+    {
+      "_id": "",
+      "title": "CoffeBooks",
+      "age": "",
+      "url": "",
+      "course": "",
+      "tags": ["" ],
+      "type": "",
+      "sub_text": "",
+      "info": "",
+      "img": "./images/"
+    },
+    {
+      "_id": "",
+      "title": "SVT RADIO",
+      "age": "",
+      "url": "",
+      "course": "",
+      "tags": ["" ],
+      "type": "",
+      "sub_text": "",
+      "info": "",
+      "img": "./images/"
+    },
+    {
+      "_id": "",
+      "title": "C# CIRCLES",
+      "age": "",
+      "url": "",
+      "course": "",
+      "tags": ["" ],
+      "type": "",
+      "sub_text": "",
+      "info": "",
+      "img": "./images/"
+    },
+    {
+      "_id": "",
+      "title": "C# GOMOKU",
+      "age": "",
+      "url": "",
+      "course": "",
+      "tags": ["" ],
+      "type": "",
+      "sub_text": "",
+      "info": "",
+      "img": "./images/"
+    },
+    {
+      "_id": "",
+      "title": "EFFECTSOFT TIMECOP",
+      "age": "",
+      "url": "",
+      "course": "",
+      "tags": ["" ],
+      "type": "",
+      "sub_text": "",
+      "info": "",
+      "img": "./images/"
+    },
+    {
+      "_id": "",
+      "title": "some project including SQL",
+      "age": "",
+      "url": "",
+      "course": "",
+      "tags": ["" ],
+      "type": "",
+      "sub_text": "",
+      "info": "",
+      "img": "./images/"
     }
+    
   ]
 }
