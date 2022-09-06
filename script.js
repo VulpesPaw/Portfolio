@@ -5,9 +5,9 @@
  * // Todo: after json reader, use map functions to print to page
  * // Todo: Include images
  * // Todo: use fetch
- * Todo: Make pretty (prettier)
- * Todo: Get hold of old projects
- * Todo: Start linking
+ * // Todo: Make pretty (prettier)
+ * Todo:(WIP) Get hold of old projects
+ * Todo:(WIP)Start linking
  * Todo: Put all of JS inside an anonym function
  * Todo: add cliclible link for clarification
  * Todo: do some fancy curls with heading, custom font or something
@@ -17,7 +17,7 @@
  * Todo: On down arrow decs. Make first text merge with down text, it otherwise douplets first row
  */
 
-// Todo: Continue writing desc for Firebase, check firebase webpage to see if it's still up and futher information
+// // Todo: Continue writing desc for Firebase, check firebase webpage to see if it's still up and futher information
 //
 // Todo: Media query for screens smaller than 900px (60em?), decrease padding withing container for better spaceing
 // Todo: run all text through grammarly
@@ -44,7 +44,7 @@ getJSON().then((data) => {
     .map(
       (obj) =>
         `<div id="${obj._id}" class="r_container">
-        <h4 style="text-align: right">${obj.age}</h4>
+        <h4 style="text-align: right" class="r_age">${obj.age}</h4>
             <a href="${obj.url}">
             <h1 class="r_title">${obj.title}</h1>
             
@@ -56,11 +56,11 @@ getJSON().then((data) => {
             <img class="r_preview" src="${obj.img}" alt="Preview of ${
           obj.title
         }"></a><br>
-        <h3 class="sub_title">${obj.sub_text}</h3>
+        <h3 class="r_sub_title">${obj.sub_text}</h3>
             <details id="dtl_${obj._id}">
             
               <summary>${smallSerializer(obj.info.slice(0, 28))}...</summary>
-              <div class="content">${obj.info}</div>
+              <div class="r_content">${obj.info}</div>
             </details>
         </div>
         
