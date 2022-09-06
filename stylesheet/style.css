@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #ddd;
+}
+h1 {
+  text-align: center;
+  margin: 1em;
+}
+
+#links {
+  margin: auto;
+  padding: 1em;
+}
+.r_container {
+  margin: 5em auto;
+  text-align: center;
+  min-height: 35em;
+  max-width: 35rem;
+  border: 1px solid #aaa;
+  border-radius: 1em;
+  padding: 1em 3em 2em 3em;
+  background-color: #3a3a3a;
+}
+.r_container * {
+  margin: 0.25em;
+}
+
+a:link {
+  color: #ddd;
+  text-decoration: none;
+}
+a:visited {
+  color: #ddd;
+}
+a:hover {
+  text-decoration: underline;
+}
+.r_tag {
+  font-size: 10pt;
+  text-align: left;
+}
+.r_type {
+  margin: 0.25em;
+  font-size: 10pt;
+  text-align: left;
+}
+.r_preview {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+.r_title {
+  color: pink;
+  margin: 0.25em;
+}
+.r_course {
+  font-size: 1.2em;
+}
+.r_container .r_content{
+  text-align: start;
+}
+.r_container .r_content a:link {
+  text-decoration: underline;
+}
+/* -- General Font Applications -- */
+.r_container .r_tag,
+.r_container .r_type,
+.r_container .r_course,
+.r_container details {
+  font-family: "Raleway";
+}
+.r_container .r_sub_title {
+  font-family: "Aleo";
+}
+.r_container b {
+  font-family: "Raleway-bold";
+  font-weight: normal;
+  font-stretch: 100%;
+  font-style: normal;
+}
+.r_container summary {
+  font-family: "Raleway";
+  font-style: italic;
+}
+/* -- Font Imports -- */
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200;
+  font-stretch: 100%;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-bold";
+  src: url("./Raleway-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 125;
+  font-stretch: 100%;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("./Aleo-Light.ttf") format("truetype");
+  font-style: normal;
+}
