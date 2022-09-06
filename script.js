@@ -17,9 +17,13 @@
  * Todo: On down arrow decs. Make first text merge with down text, it otherwise douplets first row
  */
 
-
 // Todo: Continue writing desc for Firebase, check firebase webpage to see if it's still up and futher information
-// 
+//
+// Todo: Media query for screens smaller than 900px (60em?), decrease padding withing container for better spaceing
+// Todo: run all text through grammarly
+// Todo: Sort your files by date
+
+// Todo; MAUI, make an alert on link click. Include some screenshots, maybe source code. FILTER SENSISTIVE SERVER INFORMATION!
 
 async function getJSON() {
   try {
@@ -35,7 +39,7 @@ async function getJSON() {
 
 getJSON().then((data) => {
   // JSON strucutre: JSON=>PATH{ARR[OBJ{intel,...}]}
-  console.log(data)
+  console.log(data);
   let render = data.path
     .map(
       (obj) =>
@@ -46,14 +50,16 @@ getJSON().then((data) => {
             
             <p class="r_course"><b>${obj.course}</b></p>
             <p class="r_type">Type:<i>${obj.type}</i></p>
-            <p class="r_tag">Tags: <i>${obj.tags.map(t=>t).join(", ")}</i></p><br>
-            <img class="r_preview" src="${obj.img}" alt="Preview of _id:${
-          obj.id
+            <p class="r_tag">Tags: <i>${obj.tags
+              .map((t) => t)
+              .join(", ")}</i></p><br>
+            <img class="r_preview" src="${obj.img}" alt="Preview of ${
+          obj.title
         }"></a><br>
         <h3 class="sub_title">${obj.sub_text}</h3>
             <details id="dtl_${obj._id}">
             
-              <summary>${obj.info.slice(0, 25)}...</summary>
+              <summary>${smallSerializer(obj.info.slice(0, 28))}...</summary>
               <div class="content">${obj.info}</div>
             </details>
         </div>
@@ -67,6 +73,12 @@ getJSON().then((data) => {
     Note: If json data was created from un uncredited source (eg. users), you should not use .innerHTML as this allows javascript to excecute, and thus mallicous scripture may be deployed. In this case, the JSON comes from a trusted source.
     */
 });
+
+function smallSerializer(str) {
+  const regex = /\<.\>|\<\/.\>|\<|\>/g;
+  return str.replaceAll(regex, '');
+}
+
 /*
 ,
     {
