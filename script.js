@@ -24,6 +24,7 @@
 // Todo: Sort your files by date
 
 // Todo; MAUI, make an alert on link click. Include some screenshots, maybe source code. FILTER SENSISTIVE SERVER INFORMATION!
+// Todo_ Github linking
 
 async function getJSON() {
   try {
@@ -39,12 +40,15 @@ async function getJSON() {
 
 getJSON().then((data) => {
   // JSON strucutre: JSON=>PATH{ARR[OBJ{intel,...}]}
-  console.log(data);
+
+  // Sorts age, decending 
+  data.path.sort((b, a) => a.age - b.age);
+
   let render = data.path
     .map(
       (obj) =>
         `<div id="${obj._id}" class="r_container">
-        <h4 style="text-align: right" class="r_age">${obj.age}</h4>
+        <h4 style="text-align: right" class="r_age">${obj.age.slice(0, 4)}</h4>
             <a href="${obj.url}">
             <h1 class="r_title">${obj.title}</h1>
             
@@ -76,7 +80,7 @@ getJSON().then((data) => {
 
 function smallSerializer(str) {
   const regex = /\<.\>|\<\/.\>|\<|\>/g;
-  return str.replaceAll(regex, '');
+  return str.replaceAll(regex, "");
 }
 
 /*
