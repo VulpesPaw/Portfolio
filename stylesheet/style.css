@@ -54,6 +54,8 @@ a:hover {
   max-width: 100%;
   height: auto;
   margin: 0;
+  border-radius: 0.5em;
+  border: solid #444 0.1em;
 }
 .r_title {
   color: pink;
@@ -62,7 +64,7 @@ a:hover {
 .r_course {
   font-size: 1.2em;
 }
-.r_container .r_content{
+.r_container .r_content {
   text-align: start;
 }
 .r_container .r_content a:link {
