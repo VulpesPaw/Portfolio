@@ -21,10 +21,20 @@
 //
 // Todo: Media query for screens smaller than 900px (60em?), decrease padding withing container for better spaceing
 // Todo: run all text through grammarly
-// Todo: Sort your files by date
+// // Todo: Sort your files by date
 
 // Todo; MAUI, make an alert on link click. Include some screenshots, maybe source code. FILTER SENSISTIVE SERVER INFORMATION!
 // Todo_ Github linking
+// Todo: Add pictures for node porject
+// Todo: improve Node.JS github readme file
+
+// Todo: React crash course
+
+// Todo: For Coffeebooks, link to github directly and skip intermidate HTML
+
+//
+
+//
 
 async function getJSON() {
   try {
