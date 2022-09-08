@@ -59,8 +59,8 @@ getJSON().then((data) => {
               .join(", ")}</i></p><br>
             <img class="r_preview" src="${obj.img}" alt="Preview of ${
           obj.title
-        }"></a><br>
-        <h3 class="r_sub_title">${obj.sub_text}</h3>
+        }"><br>
+        <h3 class="r_sub_title">${obj.sub_text}</h3></a>
             <details id="dtl_${obj._id}">
             
               <summary>${smallSerializer(obj.info.slice(0, 28))}...</summary>
