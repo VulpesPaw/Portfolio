@@ -51,15 +51,26 @@ async function getJSON() {
 getJSON().then((data) => {
   // JSON strucutre: JSON=>PATH{ARR[OBJ{intel,...}]}
 
-  // Sorts age, decending 
+  // Sorts age, decending
   data.path.sort((b, a) => a.age - b.age);
 
   let render = data.path
-    .map(
-      (obj) =>
-        `<div id="${obj._id}" class="r_container">
+    .map((obj) => {
+      if (obj.github != "") {
+        obj.githubLink =
+          `<h4 class="r_linkSource"><a href="${obj.github}">Github: Source</a></h4>`;
+      } else {
+        obj.githubLink = "";
+      }
+      if (obj.url != "") {
+        obj.urlLink =
+        `<h4 class="r_linkSource"><a href="${obj.url}">Live: Link</a></h4>`;
+      } else {
+        obj.urlLink = "";
+      }
+      return `<div id="${obj._id}" class="r_container">
         <h4 style="text-align: right" class="r_age">${obj.age.slice(0, 4)}</h4>
-            <a href="${obj.url}">
+            <a href="${obj.url || obj.github}">
             <h1 class="r_title">${obj.title}</h1>
             
             <p class="r_course"><b>${obj.course}</b></p>
@@ -68,9 +79,11 @@ getJSON().then((data) => {
               .map((t) => t)
               .join(", ")}</i></p><br>
             <img class="r_preview" src="${obj.img}" alt="Preview of ${
-          obj.title
-        }"><br>
-        <h3 class="r_sub_title">${obj.sub_text}</h3></a>
+        obj.title
+      }"></a><br>
+      ${obj.urlLink}
+      ${obj.githubLink}
+        <h3 class="r_sub_title">${obj.sub_text}</h3>
             <details id="dtl_${obj._id}">
             
               <summary>${smallSerializer(obj.info.slice(0, 28))}...</summary>
@@ -78,8 +91,8 @@ getJSON().then((data) => {
             </details>
         </div>
         
-        `
-    )
+        `;
+    })
     .join("");
   document.querySelector("#links").innerHTML = render;
 
