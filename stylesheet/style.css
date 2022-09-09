@@ -50,9 +50,11 @@ a:hover {
   font-size: 10pt;
   text-align: left;
 }
+/* Image */
 .r_preview {
   max-width: 100%;
   height: auto;
+  max-height: 32em;
   margin: 0;
   border-radius: 0.5em;
   border: solid #444 0.1em;
