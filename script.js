@@ -90,7 +90,11 @@ getJSON().then((data) => {
 
 function smallSerializer(str) {
   const regex = /\<.\>|\<\/.\>|\<|\>/g;
-  return str.replaceAll(regex, "");
+  str = str.replaceAll(regex, "");
+  // Replaces blank-space with spave in summary
+  const regspc = /\ㅤ/g;
+  str = str.replaceAll(regspc, " ");
+  return str;
 }
 
 /*
