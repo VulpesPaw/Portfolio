@@ -72,6 +72,11 @@ a:hover {
 .r_container .r_content a:link {
   text-decoration: underline;
 }
+.r_linkSource {
+  text-align: left;
+  text-decoration: underline 1px;
+}
+
 /* -- General Font Applications -- */
 .r_container .r_tag,
 .r_container .r_type,
