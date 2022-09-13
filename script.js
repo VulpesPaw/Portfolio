@@ -9,10 +9,10 @@
  * Todo:(WIP) Get hold of old projects
  * Todo:(WIP)Start linking
  * Todo: Put all of JS inside an anonym function
- * Todo: add cliclible link for clarification
+ * // Todo: add cliclible link for clarification
  * Todo: do some fancy curls with heading, custom font or something
  * Todo: Maek heading FEEL LIKE A FANCY HEADING BIG AND LARGE SEXY HEADOIGMdddddddd
- * Todo: Intoruce an ALERT("") with a warning that due to termination of back end API's some projects may no longer work, check for screenshots and include in desc
+ * // ##Todo: Intoruce an ALERT("") with a warning that due to termination of back end API's some projects may no longer work, check for screenshots and include in desc##
  * Todo: Include Firebase Thesis
  * Todo: On down arrow decs. Make first text merge with down text, it otherwise douplets first row
  */
@@ -23,14 +23,15 @@
 // Todo: run all text through grammarly
 // // Todo: Sort your files by date
 
-// Todo; MAUI, make an alert on link click. Include some screenshots, maybe source code. FILTER SENSISTIVE SERVER INFORMATION!
-// Todo_ Github linking
-// Todo: Add pictures for node porject
+// // ##Todo; MAUI, make an alert on link click. Include some screenshots, maybe source code. FILTER SENSISTIVE SERVER INFORMATION!##
+// // ##Todo_ Github linking##
+// // ##Todo: Add pictures for node porject##
 // Todo: improve Node.JS github readme file
 
-// Todo: React crash course
+// Todo: React crash course - fix SWE RADIO API 
+// Todo: fix swe radio api docs, nothing fancy
 
-// Todo: For Coffeebooks, link to github directly and skip intermidate HTML
+// // Todo: For Coffeebooks, link to github directly and skip intermidate HTML
 
 //
 
@@ -64,7 +65,7 @@ getJSON().then((data) => {
       }
       if (obj.url != "") {
         obj.urlLink =
-        `<h4 class="r_linkSource"><a href="${obj.url}">Live: Link</a></h4>`;
+        `<h4 class="r_linkSource"><a href="${obj.url}">Hosting: Live</a></h4>`;
       } else {
         obj.urlLink = "";
       }
