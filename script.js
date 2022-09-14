@@ -8,9 +8,9 @@
  * // Todo: Make pretty (prettier)
  * Todo:(WIP) Get hold of old projects
  * Todo:(WIP)Start linking
- * Todo: Put all of JS inside an anonym function
+ * // ## Todo: Put all of JS inside an anonym function ##
  * // Todo: add cliclible link for clarification
- * Todo: do some fancy curls with heading, custom font or something
+ * Todo: do some fancy curls with heading, custom font or something. Eg. `./Header example.png`
  * Todo: Maek heading FEEL LIKE A FANCY HEADING BIG AND LARGE SEXY HEADOIGMdddddddd
  * // ##Todo: Intoruce an ALERT("") with a warning that due to termination of back end API's some projects may no longer work, check for screenshots and include in desc##
  * Todo: Include Firebase Thesis
@@ -28,10 +28,13 @@
 // // ##Todo: Add pictures for node porject##
 // Todo: improve Node.JS github readme file
 
-// Todo: React crash course - fix SWE RADIO API 
+// // Todo: React crash course - fix SWE RADIO API 
 // Todo: fix swe radio api docs, nothing fancy
+// Todo: swe radio description
 
 // // Todo: For Coffeebooks, link to github directly and skip intermidate HTML
+// Todo: Readme Timecop, Permission with 2 s's, fix
+
 
 //
 
@@ -105,12 +108,13 @@ getJSON().then((data) => {
 function smallSerializer(str) {
   const regex = /\<.\>|\<\/.\>|\<|\>/g;
   str = str.replaceAll(regex, "");
-  // Replaces blank-space with spave in summary
+  // Replaces blank-space with space in summary
   const regspc = /\ㅤ/g;
   str = str.replaceAll(regspc, " ");
   return str;
 }
 
+// ㅤㅤ<b></b>ㅤㅤ 
 /*
 ,
     {
