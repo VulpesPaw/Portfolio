@@ -5,7 +5,7 @@
       "title": "Creatorise",
       "age": "20202",
       "url": "./pieces/000_creatorise ",
-      "github":"https://github.com/VulpesPaw/Circles",
+      "github":"https://github.com/VulpesPaw/CreatoriseWebsite",
       "course": "Web development 1<br>Course Exam Project",
       "tags": ["Static", "Html", "Css"],
       "type": "Front-End",
@@ -15,7 +15,7 @@
     },
     {
       "_id": "001",
-      "title": "Firebook",
+      "title": "Firebook - Firebase",
       "age": "20212",
       "url": "./pieces/001_firebook",
       "github":"https://github.com/VulpesPaw/FireBookList",
@@ -38,7 +38,7 @@
       "title": "PHP-Books",
       "age": "20204",
       "url": "./pieces/002_phpbook",
-      "github":"https://github.com/VulpesPaw/PHP-BookList",
+      "github":"https://github.com/VulpesPaw/PHP-BookList/tree/portfolio.torparlyckan",
       "course": "Web Server Development 1<br>Half-Course Exam",
       "tags": ["PHP", "CRUD", "Auth"],
       "type": "Back-End",
@@ -48,7 +48,7 @@
     },
     {
       "_id": "003",
-      "title": "CoffeBooks",
+      "title": "CoffeBooks - Node.JS",
       "age": "20212",
       "url": "",
       "github":"https://github.com/VulpesPaw/CoffeBooks",
@@ -69,16 +69,16 @@
     },
     {
       "_id": "004",
-      "title": "Svt Radio API",
-      "age": "320213",
-      "url": "",
-      "github":"",
-      "course": "",
-      "tags": [""],
-      "type": "",
-      "sub_text": "",
+      "title": "React Radio API",
+      "age": "20213",
+      "url": "pieces/004_react_sv_api/application/",
+      "github":"https://github.com/VulpesPaw/educational-React_SvRadio_API/tree/protfolio.torparlyckan",
+      "course": "Webserver Development 2<br>",
+      "tags": ["React","API","JavaScript"],
+      "type": "Front-End",
+      "sub_text": "API Management with React",
       "info": "",
-      "img": "./images/"
+      "img": "./images/svtradio_preview.png"
     },
     {
       "_id": "005",
@@ -86,7 +86,7 @@
       "age": "20200",
       "url": "",
       "github":"https://github.com/VulpesPaw/Circles",
-      "course": "Programming One<br> Course Exam Project",
+      "course": "Programming 1<br> Course Exam Project",
       "tags": ["C#", ".NET", "Threads"],
       "type": "System Development",
       "sub_text": "Archery Target Practice",
@@ -99,7 +99,7 @@
       "age": "20210",
       "url": "",
       "github":"https://github.com/VulpesPaw/Gomoku",
-      "course": "Programming Two<br> Course Exam Project",
+      "course": "Programming 2<br> Course Exam Project",
       "tags": ["C#", ".NET", "Networking", "I/O", "Async/Await", "Task"],
       "type": "System Development",
       "sub_text": "Three-In-A-Row",
@@ -107,12 +107,12 @@
       "img": "./images/gomoku_preview.png"
     },
     {
-      "_id": "",
-      "title": "Timecop - Effectsoft",
+      "_id": "007",
+      "title": "Timecop – .Net MAUI",
       "age": "20214",
       "url": "",
       "github":"https://github.com/VulpesPaw/Timecop",
-      "course": "",
+      "course": "Internship at Effectsoft",
       "tags": ["C#",".Net","MAUI","Blazor","API","Jira","Atlassian"],
       "type": "Full-Stack & System Develoment",
       "sub_text": "All-Platform Native Application",
@@ -120,17 +120,17 @@
       "img": "./images/timecop_preview.jpg"
     },
     {
-      "_id": "",
-      "title": "some project including SQL",
-      "age": "",
+      "_id": "008",
+      "title": "SQL CleverCloud",
+      "age": "20213",
       "url": "",
-      "github":"",
-      "course": "",
-      "tags": ["ㅤ<b></b>ㅤ"],
-      "type": "",
-      "sub_text": "",
+      "github":"https://github.com/VulpesPaw/educational_SQL-CleverCloud",
+      "course": "Webserver Development 2<br>",
+      "tags": ["SQL","CleverCloud"],
+      "type": "Back-End",
+      "sub_text": "SQL CleverCloud Connection",
       "info": "",
-      "img": "./images/"
+      "img": "./images/sql_preview.png"
     }
   ]
 }
