@@ -10,7 +10,12 @@ body {
 }
 h1 {
   text-align: center;
-  margin: 1em;
+  margin: 1em 1em 0 1em;
+}
+.title{
+  text-align: center;
+  text-shadow: 2px 2px 3px #111;
+
 }
 
 #links {
@@ -25,7 +30,8 @@ h1 {
   border: 1px solid #aaa;
   border-radius: 1em;
   padding: 1em 3em 2em 3em;
-  background-color: #3a3a3a;
+  background-color: #444;
+  box-shadow: 5px 10px 3px 1px rgba(0, 0, 0, 0.2);
 }
 .r_container * {
   margin: 0.25em;
@@ -97,6 +103,17 @@ a:hover {
   font-family: "Raleway";
   font-style: italic;
 }
+.lgt {
+  letter-spacing: 0; /* Fixs ligatues*/
+  font-variant-ligatures: discretionary-ligatures;
+  font-family: "Vollkorn-Italic";
+
+}
+.bold_vk{
+  font-family: "Vollkorn-bold";
+
+}
+
 /* -- Font Imports -- */
 @font-face {
   font-family: "Raleway";
@@ -123,3 +140,24 @@ a:hover {
   src: url("./Aleo-Light.ttf") format("truetype");
   font-style: normal;
 }
+@font-face {
+  font-family: "Vollkorn";
+  src: url("./Vollkorn-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vollkorn-Italic";
+  src: url("./Vollkorn-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vollkorn-Bold";
+  src: url("./Vollkorn-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* ? How to fix ligatures in chrome based browsers */
+/* .dsc-lgt {
+  font-variant-ligatures: discretionary-ligatures;
+  Fixs ligeratueres in chromium based browers
+  letter-spacing: 0;
+} */
