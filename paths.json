@@ -30,7 +30,7 @@
       ],
       "type": "Front-End",
       "sub_text": "Booklist Thesis with Google Firebase",
-      "info": "Firebook, is a fullㅤ<b>CRUD</b>ㅤwebapplication with <b>ㅤauthentication</b>ㅤandㅤ<b>authoritisation</b>ㅤutalizing Google's BaaS<i>(Backend-as-a-Service);</i><b>Firebase,</b> as well as its corresponding DaaSㅤ<i>ㅤ(Database-as-a-Service);ㅤ</i>ㅤ<b>FireStoreㅤ</b> and ultilizing its FireStore Rules. Firestore automaticly serialize data for security.<br> This firebase project were interiely applied to Front-Endㅤ<b>JavaScript.</b>ㅤ<br> As this is my Exam Thesis, I've written a full report about this project with the title <a href=/firebasetext>INSERT HERE -arative analys between PHP and Firebase </a>",
+      "info": "Firebook, is a fullㅤ<b>CRUD</b>ㅤwebapplication with <b>ㅤauthentication</b>ㅤandㅤ<b>authoritisation</b>ㅤutalizing Google's BaaS<i>(Backend-as-a-Service);</i><b>Firebase,</b> as well as its corresponding DaaSㅤ<i>ㅤ(Database-as-a-Service);ㅤ</i>ㅤ<b>FireStoreㅤ</b> and utilizing its FireStore Rules. Firestore automatically serializes data for security.<br> This firebase project was entirely applied to Front-Endㅤ<b>JavaScript.</b>ㅤ<br> As this is my Exam Thesis, I've written a full report about this project with the title <a href=https://github.com/VulpesPaw/FireBookList/blob/master/Firebase%20-%20Exam%20Thesis.pdf>Comparative analysis between PHP and Firebase </a>. ",
       "img": "./images/firebooks_preview.jpg"
     },
     {
@@ -60,11 +60,11 @@
         "JWT-auth",
         "Auth",
         "Cookies",
-        "JavaScript"
+        "JavaScript","API"
       ],
       "type": "Full-Stack",
       "sub_text": "Booklist with Node.JS & MongoDB",
-      "info": "CoffeBooks is my final course exam project for<i>ㅤWeb Server Development One</i>ㅤat Kattegattgymnasiet. <br>It has a backend made inㅤ<b>Node.JS</b>ㅤmostly built as a set of API's, and a frontend in standardㅤ<b>JavaScript</b>ㅤ which was developed after the backend was made. <br>The Node.JS project is connected to aㅤ<b>MongoDB</b>ㅤcluster for data storage, utilizing fullㅤ<b>CRUD</b>ㅤandㅤ<b>authentication</b> as well asㅤ<b>authoritization</b>ㅤfor a number of requests. Inputfileds get serialized for added security and sensitive user data is handled with bcrypt.",
+      "info": "CoffeBooks is my final course exam project for<i>ㅤWeb Server Development One</i>ㅤat Kattegattgymnasiet. <br>It has a backend made inㅤ<b>Node.JS</b>ㅤmostly built as a set of APIs, and a frontend in standardㅤ<b>JavaScript</b>ㅤ which was developed after the backend was made. <br>The Node.JS project is connected to aㅤ<b>MongoDB</b>ㅤcluster for data storage, utilizing fullㅤ<b>CRUD</b>ㅤandㅤ<b>authentication</b> as well asㅤ<b>authoritization</b>ㅤfor a number of requests. Input fields get serialized for added security and sensitive user data is handled with bcrypt.",
       "img": "./images/coffebooks_preview.png"
     },
     {
@@ -77,7 +77,7 @@
       "tags": ["React","API","JavaScript"],
       "type": "Front-End",
       "sub_text": "API Management with React",
-      "info": "",
+      "info": "React Radio API is an educational project which fetches the National Swedish Radio API and renders this in front-end with<b>ㅤReact,ㅤ</b>one of its features is React SPA<b>ㅤswitching;ㅤ</b>url-changes without reloading the page. Project is compiled with<b>ㅤBabel.ㅤ</b>",
       "img": "./images/svtradio_preview.png"
     },
     {
@@ -90,7 +90,7 @@
       "tags": ["C#", ".NET", "Threads"],
       "type": "System Development",
       "sub_text": "Archery Target Practice",
-      "info": "C# Circles is my course exam project forㅤ<i>Programming 1</i>ㅤat Kattegatt gymnasiet.<br/> This project were buildt for, and is in use byㅤ<i>Halmstad Bågskytte Förening</i>.ㅤ <br> The project includes multiple different functions, such asㅤ<b>Threads,</b>ㅤ<b>Cross Thread Communications,</b>ㅤas well as basics priciples of programming. ",
+      "info": "C# Circles is my course exam project forㅤ<i>Programming 1</i>ㅤat Kattegattgymnasiet.<br/> This project was built for, and is in use byㅤ<i>Halmstad Bågskytte Förening</i>.ㅤ <br> The project includes multiple different functions, such asㅤ<b>Threads,</b>ㅤ<b>Cross Thread Communications,</b>ㅤas well as basics principles of programming. ",
       "img": "./images/circles_preview.png"
     },
     {
@@ -116,7 +116,7 @@
       "tags": ["C#",".Net","MAUI","Blazor","API","Jira","Atlassian"],
       "type": "Full-Stack & System Develoment",
       "sub_text": "All-Platform Native Application",
-      "info": "Timecop is a project that I made together with one of my classmates during our 4 week practice at Effectsoft throught Kattegattgymnasiets's IT-Gymnasieingengörs program. <br> It's aㅤ<b>C# Blazor</b>ㅤapplication that was converted into the at-the-time beta-version of Microsoftㅤ<b>MAUI,</b>ㅤwhich makes a blazor (web application) into an all-platform native and web application. <br> Our task was to develop an mvp time tracker which should be connected to thierㅤ<b>Jira</b>ㅤandㅤ<b>ㅤAtlassian</b>enviorments.<br> For more information, see project on<a href='https://github.com/VulpesPaw/Timecop' style='text-decoration:underline;'>github</a>. ",
+      "info": "Timecop is a project that I made together with one of my classmates during our 4-week practice at Effectsoft through Kattegattgymnasiets's IT-Gymnasieingengörs program. <br> It's aㅤ<b>C# Blazor</b>ㅤapplication that was converted into the at-the-time beta-version of Microsoftㅤ<b>MAUI,</b>ㅤwhich makes a blazor (web application) into an all-platform native and web application. <br> Our task was to develop an mvp time tracker which should be connected to thierㅤ<b>Jira</b>ㅤandㅤ<b>ㅤAtlassian</b>enviorments.<br> For more information, see project on<a href='https://github.com/VulpesPaw/Timecop' style='text-decoration:underline;'>github</a>.",
       "img": "./images/timecop_preview.jpg"
     },
     {
@@ -126,10 +126,10 @@
       "url": "",
       "github":"https://github.com/VulpesPaw/educational_SQL-CleverCloud",
       "course": "Webserver Development 2<br>",
-      "tags": ["SQL","CleverCloud"],
+      "tags": ["SQL","CleverCloud","API","Node.JS"],
       "type": "Back-End",
       "sub_text": "SQL CleverCloud Connection",
-      "info": "",
+      "info": "A small project running <b>ㅤNode.JSㅤ</b> which connects to CleverCloud <b>ㅤSQLㅤ</b> database. Feeds and passes raw JSON data. I used an API manager as an interface to send: get, post, put & delete -requests.  ",
       "img": "./images/sql_preview.png"
     }
   ]
