@@ -14,11 +14,11 @@
  * // Todo: Maek heading FEEL LIKE A FANCY HEADING BIG AND LARGE SEXY HEADOIGMdddddddd -- look at React Ligeratues
  * // ##Todo: Intoruce an ALERT("") with a warning that due to termination of back end API's some projects may no longer work, check for screenshots and include in desc##
  * // Todo: Include Firebase Thesis
- * Todo: On down arrow decs. Make first text merge with down text, it otherwise douplets first row
+ * // Todo: On down arrow decs. Make first text merge with down text, it otherwise douplets first row
  */
 
 // // Todo: Continue writing desc for Firebase, check firebase webpage to see if it's still up and futher information
-// Todo: Media query for screens smaller than 900px (60em?), decrease padding withing container for better spaceing
+// // Todo: Media query for screens smaller than 900px (60em?), decrease padding withing container for better spaceing
 // // Todo: run all text through grammarly
 // // Todo: Sort your files by date
 
@@ -27,7 +27,7 @@
 // // ##Todo: Add pictures for node porject##
 // // Todo: improve Node.JS github readme file
 
-// // Todo: React crash course - fix SWE RADIO API 
+// // Todo: React crash course - fix SWE RADIO API
 // // Todo: fix swe radio api docs, nothing fancy
 // // Todo: swe radio description
 
@@ -39,9 +39,11 @@
 
 // Todo: Update Portfolio Readme (do it simple)
 
-// Todo: Crash Course mySQL
+// //  Todo: Crash Course mySQL
 
-// Todo: CV/personligt brev. Understryck att du är inte proffetsionllel utan kan grudnerna i respektive språk
+// // Todo: CV/personligt brev. Understryck att du är inte proffetsionllel utan kan grudnerna i respektive språk
+
+//
 
 //
 
@@ -64,14 +66,12 @@ getJSON().then((data) => {
   let render = data.path
     .map((obj) => {
       if (obj.github != "") {
-        obj.githubLink =
-          `<h4 class="r_linkSource"><a href="${obj.github}">Github: Source</a></h4>`;
+        obj.githubLink = `<h4 class="r_linkSource"><a href="${obj.github}">Github: Source</a></h4>`;
       } else {
         obj.githubLink = "";
       }
       if (obj.url != "") {
-        obj.urlLink =
-        `<h4 class="r_linkSource"><a href="${obj.url}">Hosting: Live</a></h4>`;
+        obj.urlLink = `<h4 class="r_linkSource"><a href="${obj.url}">Hosting: Live</a></h4>`;
       } else {
         obj.urlLink = "";
       }
@@ -93,7 +93,10 @@ getJSON().then((data) => {
         <h3 class="r_sub_title">${obj.sub_text}</h3>
             <details id="dtl_${obj._id}">
             
-              <summary>${smallSerializer(obj.info.slice(0, 28))}...</summary>
+              <summary id="sum_${obj._id}">${smallSerializer(
+        obj.info.slice(0, 28)
+      )}...</summary>
+             
               <div class="r_content">${obj.info}</div>
             </details>
         </div>
@@ -103,12 +106,24 @@ getJSON().then((data) => {
     .join("");
   document.querySelector("#links").innerHTML = render;
 
+  document.querySelectorAll("details").forEach((detail) => {
+    detail.addEventListener("toggle", (e) => {
+      if (e.target.firstElementChild.innerHTML != "Description") {
+        e.target.firstElementChild.innerHTML = "Description";
+      } else {
+        e.target.firstElementChild.innerHTML = smallSerializer(
+          e.target.lastElementChild.innerHTML.slice(0, 28)+"..."
+        );
+      }
+    });
+  });
   /*
     Note: If json data was created from un uncredited source (eg. users), you should not use .innerHTML as this allows javascript to excecute, and thus mallicous scripture may be deployed. In this case, the JSON comes from a trusted source.
     */
 });
 
 function smallSerializer(str) {
+  // Serializes element-tags
   const regex = /\<.\>|\<\/.\>|\<|\>/g;
   str = str.replaceAll(regex, "");
   // Replaces blank-space with space in summary
