@@ -1,52 +1,3 @@
-/**
- * Todo: =====
- * // Todo: Read paths from json file bc technicalities
- * // Todo: Include age, course, type of projects (eg. front/back-end), info etc.
- * // Todo: after json reader, use map functions to print to page
- * // Todo: Include images
- * // Todo: use fetch
- * // Todo: Make pretty (prettier)
- * // Todo:(WIP) Get hold of old projects
- * // Todo:(WIP)Start linking
- * // ## Todo: Put all of JS inside an anonym function ##
- * // Todo: add cliclible link for clarification
- * // Todo: do some fancy curls with heading, custom font or something. Eg. `./Header example.png`
- * // Todo: Maek heading FEEL LIKE A FANCY HEADING BIG AND LARGE SEXY HEADOIGMdddddddd -- look at React Ligeratues
- * // ##Todo: Intoruce an ALERT("") with a warning that due to termination of back end API's some projects may no longer work, check for screenshots and include in desc##
- * // Todo: Include Firebase Thesis
- * // Todo: On down arrow decs. Make first text merge with down text, it otherwise douplets first row
- */
-
-// // Todo: Continue writing desc for Firebase, check firebase webpage to see if it's still up and futher information
-// // Todo: Media query for screens smaller than 900px (60em?), decrease padding withing container for better spaceing
-// // Todo: run all text through grammarly
-// // Todo: Sort your files by date
-
-// // ##Todo; MAUI, make an alert on link click. Include some screenshots, maybe source code. FILTER SENSISTIVE SERVER INFORMATION!##
-// // ##Todo_ Github linking##
-// // ##Todo: Add pictures for node porject##
-// // Todo: improve Node.JS github readme file
-
-// // Todo: React crash course - fix SWE RADIO API
-// // Todo: fix swe radio api docs, nothing fancy
-// // Todo: swe radio description
-
-// // Todo: go throught descriptions
-
-// // Todo: go through readme files
-// // Todo: For Coffeebooks, link to github directly and skip intermidate HTML
-// // Todo: Readme Timecop, Permission with 2 s's, fix
-
-// Todo: Update Portfolio Readme (do it simple)
-
-// //  Todo: Crash Course mySQL
-
-// // Todo: CV/personligt brev. Understryck att du är inte proffetsionllel utan kan grudnerna i respektive språk
-
-//
-
-//
-
 async function getJSON() {
   try {
     var resp = await fetch("./paths.json");
@@ -112,7 +63,7 @@ getJSON().then((data) => {
         e.target.firstElementChild.innerHTML = "Description";
       } else {
         e.target.firstElementChild.innerHTML = smallSerializer(
-          e.target.lastElementChild.innerHTML.slice(0, 28)+"..."
+          e.target.lastElementChild.innerHTML.slice(0, 28) + "..."
         );
       }
     });

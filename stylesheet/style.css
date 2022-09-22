@@ -12,10 +12,9 @@ h1 {
   text-align: center;
   margin: 1em 1em 0 1em;
 }
-.title{
+.title {
   text-align: center;
   text-shadow: 2px 2px 3px #111;
-
 }
 
 #links {
@@ -107,11 +106,9 @@ a:hover {
   letter-spacing: 0; /* Fixs ligatues*/
   font-variant-ligatures: discretionary-ligatures;
   font-family: "Vollkorn-Italic";
-
 }
-.bold_vk{
+.bold_vk {
   font-family: "Vollkorn-bold";
-
 }
 
 /* -- Font Imports -- */
@@ -155,6 +152,11 @@ a:hover {
   font-weight: bold;
 }
 
+@media (max-width: 40rem) {
+  .r_container {
+    padding: 1.5em;
+  }
+}
 /* ? How to fix ligatures in chrome based browsers */
 /* .dsc-lgt {
   font-variant-ligatures: discretionary-ligatures;
