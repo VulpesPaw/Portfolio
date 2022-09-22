@@ -2,27 +2,27 @@
 
 ## Background
 
-As I went for my first job hunt as a junior web developer, I were in need of a portfolio, and this is it.
+As I went on my first job hunt as a junior web developer, I needed a portfolio, and this is it.
 
 ## Purpose
 
-To show what types of project I've worked on in the past, of what I've done and know. This portfolio is thus a comilation of the major points as well as other porject I beleive is worth showing.
+To show what types of projects I've worked on in the past, of what I've done and know. This portfolio is thus a compilation of the major points as well as other projects I believe are worth showing.
 
-This is mainly just a passage site to passthrough to other projects.
+This is mainly just a passage site to pass through to other projects.
 
 #### Requirements:
 
-- Decent but simple UI which leads to other project
+- Decent but simple UI which leads to other projects
 
 - If possible, live host projects
 
-- Link to github if repo exists
+- Link to GitHub if repo exists
 
-- Bunch of old porjects
+- Bunch of old projects
 
 ## Development
 
-Decided to store data in a JSON file, just for simplicity sake. 
+Decided to store data in a JSON file, just for simplicity's sake. 
 
 #### The project includes but is not limited to the following features:
 
@@ -30,11 +30,11 @@ Decided to store data in a JSON file, just for simplicity sake.
 
 - Preview Images
 
-- Desciption with preview of info text which changes title on click
+- Description with a preview of info text which changes the title on click
 
-- Links to Github repos
+- Links to GitHub repos
 
-- If avalible, live hosting of project (only during job hunting season)
+- If available, live hosting of projects (only during job hunting season)
 
 - General project info
 
